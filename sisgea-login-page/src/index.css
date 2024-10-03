@@ -1,0 +1,62 @@
+:root {
+  --blue: #007bff;
+  --orange: #ed9a2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*::-webkit-scrollbar {
+  background-color: none;
+  width: 6px;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 8px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+
+  input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid transparent;
+  border-left: none;
+  border-right: none;
+  height: 22px;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+
+  &:hover {
+      text-decoration: underline;
+  }
+}
